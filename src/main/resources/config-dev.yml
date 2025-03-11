@@ -1,0 +1,19 @@
+vertx:
+  db:
+    host: "localhost"
+    port: 3306
+    database: "tour_tools"
+    user: "root"
+    password: "admin888"
+    pool:
+      maxSize: 10
+      idleTimeout: 30
+wx:
+  appId: "wx7e5fd6cff95698f2"
+  secret: "00ef5f4f9caa92e345cd23b0538ac6ac"
+  token_url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx7e5fd6cff95698f2&secret=00ef5f4f9caa92e345cd23b0538ac6ac"
+  qrcode_url: "https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token="
+  phone_url: "https://api.weixin.qq.com/wxa/business/getuserphonenumber?access_token="
+  login_url: "https://api.weixin.qq.com/sns/jscode2session?appid=wx7e5fd6cff95698f2&secret=00ef5f4f9caa92e345cd23b0538ac6ac&js_code="
+  qrcode_path: "uploads/qrcode"
+  app_path: "pages/index/index"

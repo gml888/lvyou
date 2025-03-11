@@ -1,0 +1,64 @@
+= Lvyou
+
+image:https://img.shields.io/badge/vert.x-4.5.13-purple.svg[link="https://vertx.io"]
+
+This application was generated using http://start.vertx.io
+
+== Building
+
+To launch your tests:
+
+[source,bash]
+----
+./gradlew clean test
+----
+
+To package your application:
+
+
+
+To run your application:
+
+[source,bash]
+----
+./gradlew clean run
+./gradlew clean runDev
+./gradlew clean runTest
+./gradlew clean runProd
+----
+
+== 打包部署运行
+[source,bash]
+----
+./gradlew clean
+./gradlew assemble
+
+----
+打包后生在的jar包在 ./build/libs/lvyou-1.0.0-fat.jar
+[source,bash]
+----
+java -jar ./build/libs/lvyou-1.0.0-fat.jar
+
+
+# 运行本地开发环境
+java -Denv=dev -jar ./build/libs/lvyou-1.0.0-fat.jar
+
+# 运行测试环境
+java -Denv=test -jar ./build/libs/lvyou-1.0.0-fat.jar
+
+# 运行正式环境
+java -Denv=prod -jar ./build/libs/lvyou-1.0.0-fat.jar
+
+# 运行正式环境打包(已包含环境信息)
+java -jar ./build/libs/lvyou-1.0.0-fat.jar
+----
+还有一种模式生成一个tar包,解压缩后运行
+[source,bash]
+----
+./bin/lvyou start com.moying.lvyou.Main
+----
+
+[source,bash]
+----
+./bin/lvyou stop com.moying.lvyou.Main
+----
