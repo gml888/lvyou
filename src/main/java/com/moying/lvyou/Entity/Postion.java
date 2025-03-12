@@ -71,4 +71,17 @@ public class Postion {
    */
   @Column(name = "createtime", nullable = false)
   private Date createtime;
+
+  /**
+   * 景点打卡选项图片
+   */
+  @Column(name = "option_pic", nullable = false)
+  private String optionPic;
+
+  /**
+   * 景点打卡选项说明
+   */
+  @Column(name = "option_content", nullable = false, length = 5000)
+  private String optionContent;
+
 }

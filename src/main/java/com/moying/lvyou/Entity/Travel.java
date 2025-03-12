@@ -112,4 +112,10 @@ public class Travel {
   @Column(name = "sex", nullable = false)
   private Byte sex;
 
+  /**
+   * 挑战结果 0:失败 1:成功
+   */
+  @Column(name = "result", nullable = false)
+  private Byte result;
+
 }

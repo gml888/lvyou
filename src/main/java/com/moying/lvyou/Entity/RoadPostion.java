@@ -1,5 +1,6 @@
 package com.moying.lvyou.Entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import lombok.Data;
@@ -53,12 +54,6 @@ public class RoadPostion {
   private Integer point;
 
   /**
-   * 该线路在该景点对应的线路简图
-   */
-  @Column(name = "pic", nullable = false)
-  private String pic;
-
-  /**
    * 是否显示
    */
   @Column(name = "isshow", nullable = false)
@@ -69,4 +64,17 @@ public class RoadPostion {
    */
   @Column(name = "createtime", nullable = false)
   private Date createtime;
+
+  /**
+   * 点亮点横坐标
+   */
+  @Column(name = "cur_x", nullable = false, precision = 10, scale = 2)
+  private BigDecimal curX;
+
+  /**
+   * 点亮点纵坐标
+   */
+  @Column(name = "cur_y", nullable = false, precision = 10, scale = 2)
+  private BigDecimal curY;
+
 }

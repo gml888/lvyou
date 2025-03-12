@@ -69,4 +69,35 @@ public class Bbs {
    */
   @Column(name = "isshow", nullable = false)
   private byte isshow;
+
+  /**
+   * 排序(用于置顶)
+   */
+  @Column(name = "rank", nullable = false)
+  private Integer rank;
+
+  /**
+   * 是否热门
+   */
+  @Column(name = "hot", nullable = false)
+  private Byte hot;
+
+  /**
+   * 浏览量
+   */
+  @Column(name = "hits", nullable = false)
+  private Integer hits;
+
+  /**
+   * 点赞数
+   */
+  @Column(name = "zans", nullable = false)
+  private Integer zans;
+
+  /**
+   * 点赞人列表
+   */
+  @Column(name = "zanlist")
+  private String zanlist;
+
 }

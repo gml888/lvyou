@@ -64,4 +64,10 @@ public class Road {
   @Column(name = "goodsidstr", nullable = false, length = 500)
   private String goodsidstr;
 
+  /**
+   * 活动最大天数
+   */
+  @Column(name = "maxdays", nullable = false)
+  private Byte maxdays;
+
 }
